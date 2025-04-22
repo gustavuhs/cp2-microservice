@@ -1,0 +1,16 @@
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin: 12px 0;
+  border: 1px solid #b39ddb; /* Roxo claro */
+  border-radius: 6px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+p strong {
+  color: #512da8; /* Roxo escuro */
+}

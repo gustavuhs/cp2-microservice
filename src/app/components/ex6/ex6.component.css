@@ -1,0 +1,19 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 6px;
+  background-color: #f0f4f8; /* Azul bem claro */
+  border: 1px solid #cfd8dc; /* Cinza claro */
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+li:nth-child(odd) {
+  background-color: #e3f2fd; /* Azul mais intenso para ímpares */
+}

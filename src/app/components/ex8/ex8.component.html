@@ -1,0 +1,17 @@
+<h2>Exercício 8 - Validação de Login</h2>
+
+<label for="campoEmail">E-mail</label>
+<input id="campoEmail" type="text" [(ngModel)]="loginEmail" placeholder="Ex: exemplo@email.com"> <br>
+
+<label for="campoSenha">Senha</label>
+<input id="campoSenha" type="password" [(ngModel)]="loginSenha" placeholder="Mínimo 6 caracteres"> <br>
+
+<div>
+  <p *ngIf="!loginEmail || !loginSenha" class="alerta-erro">Preencha todos os campos.</p>
+  <p *ngIf="loginEmail && loginSenha && (!loginEmail.includes('@') || loginSenha.length < 6)" class="alerta-erro">
+    Dados inválidos!
+  </p>
+  <p *ngIf="loginEmail && loginSenha && loginEmail.includes('@') && loginSenha.length >= 6" class="alerta-sucesso">
+    Acesso autorizado!
+  </p>
+</div>

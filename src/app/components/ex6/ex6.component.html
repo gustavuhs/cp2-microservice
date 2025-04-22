@@ -1,0 +1,9 @@
+<h2>Exercício 6</h2>
+<h2>Relação de Pessoas</h2>
+
+<ul>
+  <li *ngFor="let pessoa of listaPessoas; trackBy: rastrearPorNome">
+    Nome: {{ pessoa.nome }}, Idade: {{ pessoa.idade }}
+  </li>
+  <li *ngIf="listaPessoas.length === 0">Nenhuma pessoa cadastrada.</li>
+</ul>

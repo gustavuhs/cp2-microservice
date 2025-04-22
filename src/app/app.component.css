@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #d4fdd4;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .autor {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2e7d32; /
+  }
+  
+  .autor strong {
+    font-size: 20px;
+    color: #1b5e20; 
+    text-transform: uppercase;
+  }
+
+  h1 {
+    text-align: center; 
+    margin: 20px 0; 
+    font-size: 28px; 
+    color: #2e7d32; 
+    font-family: 'Segoe UI', sans-serif;
+  }

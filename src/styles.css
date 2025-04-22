@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #d4fdd4, #ffffff); /* Gradiente verde claro */
+    display: grid;
+    place-items: center; /* Centraliza tudo no meio da tela */
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}

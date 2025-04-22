@@ -1,0 +1,17 @@
+<h2>Exercício 5 - Situação do Pedido</h2>
+
+<p>Situação atual: <strong>{{ situacao }}</strong></p>
+
+<select [(ngModel)]="situacao">
+  <option value="analise">Em Análise</option>
+  <option value="preparando">Preparando</option>
+  <option value="finalizado">Finalizado</option>
+  <option value="desconhecido">Desconhecido</option>
+</select>
+
+<div [ngSwitch]="situacao">
+  <p *ngSwitchCase="'analise'">Seu pedido está em análise.</p>
+  <p *ngSwitchCase="'preparando'">Estamos preparando o envio.</p>
+  <p *ngSwitchCase="'finalizado'">Pedido finalizado com sucesso!</p>
+  <p *ngSwitchDefault>Status não reconhecido.</p>
+</div>

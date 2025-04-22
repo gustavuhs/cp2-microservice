@@ -1,0 +1,37 @@
+.painel-calculo {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff3e0; /* Laranja claro */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #90caf9; /* Azul claro */
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+p.alerta-erro {
+  color: #c62828; /* Vermelho forte */
+}
+
+p.resultado {
+  color: #1565c0; /* Azul escuro */
+  font-weight: bold;
+}

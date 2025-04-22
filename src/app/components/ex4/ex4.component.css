@@ -1,0 +1,60 @@
+.painel {
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff8f2;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color: #ef6c00; /* Laranja escuro */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-tarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff3e0; /* Laranja bem claro */
+  color: #ef6c00;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+}
+
+.item-tarefa span {
+  flex: 1;
+}
+
+.botao-remover {
+  padding: 6px 12px;
+  background-color: #c62828; /* Vermelho escuro */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.botao-remover:hover {
+  background-color: #b71c1c;
+}
+
+.lista-vazia {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 12px;
+}

@@ -1,0 +1,11 @@
+<h2>Exercício 4 - Lista Dinâmica</h2>
+
+<div class="painel">
+  <ul class="lista-tarefas">
+    <li *ngFor="let item of lista; let idx = index" class="item-tarefa">
+      <span>{{ item }}</span>
+      <button (click)="excluir(idx)" class="botao-remover">Excluir</button>
+    </li>
+    <li *ngIf="lista.length === 0" class="lista-vazia">Nenhuma atividade registrada</li>
+  </ul>
+</div>

@@ -1,0 +1,11 @@
+<h2>Verificação de Idade</h2>
+
+<div class="caixa">
+  <label for="campoIdade">Informe sua idade:</label>
+  <input id="campoIdade" type="number" [(ngModel)]="valorIdade" class="campo-idade" placeholder="Digite aqui">
+
+  <p class="idade-info">Sua idade: <strong>{{ valorIdade }}</strong></p>
+
+  <p *ngIf="valorIdade >= 18" class="liberado">Acesso autorizado</p>
+  <p *ngIf="valorIdade < 18" class="bloqueado">Acesso negado</p>
+</div>

@@ -1,0 +1,53 @@
+.caixa {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #f3f3fb;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color: #512da8; /* Roxo escuro */
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.campo-idade {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #b39ddb; /* Roxo claro */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.campo-idade:focus {
+  outline: none;
+  border-color: #512da8;
+  box-shadow: 0 0 8px rgba(81, 45, 168, 0.3);
+}
+
+.idade-info {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.liberado {
+  color: #1e88e5; /* Azul */
+  font-weight: bold;
+}
+
+.bloqueado {
+  color: #d32f2f; /* Vermelho escuro */
+  font-weight: bold;
+}

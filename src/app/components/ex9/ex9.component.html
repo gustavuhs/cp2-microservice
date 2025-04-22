@@ -1,0 +1,8 @@
+<h2>Exercício 9 - Lista de Produtos</h2>
+
+<ul>
+  <li *ngFor="let item of listaProdutos" [class.destaque]="item.emOferta">
+    {{ item.nome }}, Preço: R$ {{ item.preco }}
+  </li>
+  <li *ngIf="listaProdutos.length === 0">Nenhum item disponível no momento.</li>
+</ul>

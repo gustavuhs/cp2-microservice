@@ -1,0 +1,9 @@
+<h2>Exercício 7 - Interpretação</h2>
+
+<input type="text" [(ngModel)]="entradaTexto" placeholder="Digite um valor">
+
+<div [ngSwitch]="entradaTexto">
+  <p *ngSwitchCase="'um'">Você digitou: Um</p>
+  <p *ngSwitchCase="'dois'">Você digitou: Dois</p>
+  <p *ngSwitchDefault>Valor não reconhecido</p>
+</div>

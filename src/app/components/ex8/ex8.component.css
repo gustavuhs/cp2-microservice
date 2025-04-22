@@ -1,0 +1,29 @@
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 1px solid #90caf9; /* Azul claro */
+  border-radius: 6px;
+  width: 100%;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+p.alerta-erro {
+  color: #c62828; /* Vermelho forte */
+}
+
+p.alerta-sucesso {
+  color: #1565c0; /* Azul escuro */
+}

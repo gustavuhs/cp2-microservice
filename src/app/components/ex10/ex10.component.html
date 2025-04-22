@@ -1,0 +1,28 @@
+<h2>Exercício 10 - Mini Calculadora</h2>
+
+<div class="painel-calculo">
+  <label for="entradaA">Número A:</label>
+  <input id="entradaA" type="number" [(ngModel)]="numeroA" placeholder="Digite o valor A">
+
+  <label for="entradaB">Número B:</label>
+  <input id="entradaB" type="number" [(ngModel)]="numeroB" placeholder="Digite o valor B">
+
+  <label for="tipo">Tipo de operação:</label>
+  <select id="tipo" [(ngModel)]="tipoOperacao">
+    <option value="adicao">Adição</option>
+    <option value="subtracao">Subtração</option>
+    <option value="multiplicacao">Multiplicação</option>
+    <option value="divisao">Divisão</option>
+  </select>
+
+  <div [ngSwitch]="tipoOperacao">
+    <p *ngSwitchCase="'adicao'" class="resultado">Resultado: {{ numeroA + numeroB }}</p>
+    <p *ngSwitchCase="'subtracao'" class="resultado">Resultado: {{ numeroA - numeroB }}</p>
+    <p *ngSwitchCase="'multiplicacao'" class="resultado">Resultado: {{ numeroA * numeroB }}</p>
+    <div *ngSwitchCase="'divisao'">
+      <p *ngIf="numeroB === 0" class="alerta-erro">Erro: divisão por zero!</p>
+      <p *ngIf="numeroB !== 0" class="resultado">Resultado: {{ numeroA / numeroB }}</p>
+    </div>
+    <p *ngSwitchDefault>Selecione uma operação para calcular.</p>
+  </div>
+</div>
